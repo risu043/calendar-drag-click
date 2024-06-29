@@ -1,0 +1,52 @@
+.Modal {
+  position: absolute;
+  inset: 10rem 0 auto;
+  margin: auto;
+  z-index: 1000;
+  background-color: white;
+  max-width: 380px;
+  width: 90%;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.Overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.Modal-inner {
+  position: relative;
+  padding: 3.5rem 1rem 1.5rem;
+}
+
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: none;
+  border-radius: 50%;
+  background-color: beige;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-content: center;
+}
+.input-area {
+  display: flex;
+  margin-bottom: 0.75rem;
+}
+
+.submit-button {
+  border: none;
+  border-radius: 50px;
+  background-color: plum;
+  color: white;
+  display: block;
+  margin-inline: auto;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
