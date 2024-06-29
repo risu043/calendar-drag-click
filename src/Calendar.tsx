@@ -58,6 +58,9 @@ export default function Calendar() {
     if (
       window.confirm(`このイベント「${clickInfo.event.title}」を削除しますか`)
     ) {
+      setEvents((prevEvents) =>
+        prevEvents.filter((event) => event.id !== clickInfo.event.id)
+      );
       clickInfo.event.remove();
     }
   }, []);
